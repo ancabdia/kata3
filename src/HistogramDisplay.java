@@ -1,4 +1,5 @@
 
+import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JPanel;
 import org.jfree.chart.ChartFactory;
@@ -38,6 +39,8 @@ public class HistogramDisplay extends ApplicationFrame {
                 "Dominios email", "Nº de emails", dataSet, 
                 PlotOrientation.VERTICAL, false, false, 
                 rootPaneCheckingEnabled);
+        chart.setBackgroundPaint(Color.ORANGE);
+        chart.getCategoryPlot().setBackgroundPaint(Color.GREEN);
         return chart;
     }
     
